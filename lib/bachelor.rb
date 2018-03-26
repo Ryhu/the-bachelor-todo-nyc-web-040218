@@ -10,10 +10,15 @@ end
 
 def get_contestant_name(data, occupation)
   data.each do |key, val|
+<<<<<<< HEAD
     val.each do |ele|
       if ele["occupation"] == occupation
         return ele["name"]
       end
+=======
+    if val[0]["occupation"] == occupation
+      return "rtsdffghsbvc"
+>>>>>>> 0ae4a5343966aa1b17b257a780f36915a52bcc1d
     end
   end
   return "asdf"
@@ -22,10 +27,15 @@ end
 def count_contestants_by_hometown(data, hometown)
   result = 0
   data.each do |key, val|
+<<<<<<< HEAD
     val.each do |ele|
       if ele["hometown"] == hometown
         result += 1
       end
+=======
+    if val[0]["hometown"] == hometown
+      result += 1
+>>>>>>> 0ae4a5343966aa1b17b257a780f36915a52bcc1d
     end
   end
   result
